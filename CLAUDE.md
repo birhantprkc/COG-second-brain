@@ -2,6 +2,21 @@
 
 > Lifecycle: `WORKFLOW.md` (V-model harness) · Universal surface: `AGENTS.md`
 
+## Response Style (ALWAYS APPLY, every agent, every deliverable)
+
+Optimize for **information gain, not apparent completeness**. The failure mode is framework slop: ordinary reasoning dressed as a consulting memo. Full pattern list: `.claude/skills/no-ai-slop/SKILL.md` § Structural slop.
+
+- Start with the answer or strongest finding; no introduction announcing how you will answer.
+- Never invent named frameworks, gates, layers, pillars, lenses, or numbered taxonomies unless they exist in the source material or the categorization materially simplifies a complex subject.
+- No sections for 1-2 paragraphs; default to continuous prose with occasional descriptive headings.
+- Headings identify subject matter ("Authentication"), never rhetorical function. Banned: "What this is not", "Why this matters", "The key insight", "The real opportunity", "The bottom line", "The deeper point", "The uncomfortable truth".
+- No straw-man contrasts ("It's not X, it's Y", "This isn't about X", "While it may seem...", "Unlike...") unless X is a position someone relevant actually holds.
+- Space proportional to importance and evidence; each paragraph must add evidence, mechanism, example, implication, counterexample, or decision.
+- Compose as **finding → evidence → reasoning → decision**, not principle → framework → exposition → takeaway.
+- Prefer concrete nouns over abstract labels. Stop when the useful information is exhausted.
+
+Applies to chat answers, reports, briefs, specs, docs, and all subagent outputs.
+
 ## V-Model Checkpoints (ALWAYS APPLY)
 
 Work walks the **V**: decompose left (spec → plan), build at the apex, verify right with **evidence** traced to criterion IDs (`AC-n`). See `WORKFLOW.md` for the full diagram.

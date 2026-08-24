@@ -2,6 +2,18 @@
 
 All notable changes to COG (Cognition + Obsidian + Git) will be documented in this file.
 
+## [3.11.0] - 2026-08-24
+
+### Added
+
+#### Structural slop: composition-level anti-slop rules
+Word bans catch surface slop ("delve", em dashes); the deeper LLM tell is composition — predictable rhetorical structure with low information gain. Community evidence converged on this: large-scale analyses of perceived AI writing found flat rhythm and polished-but-empty paragraphs outrank word-level tells, and recurring complaints target invented frameworks ("the gate: four decisions"), rhetorical-function headings ("What this is not", "Why this matters"), and straw-man contrasts ("It's not X, it's Y").
+
+- `no-ai-slop` skill: new **Structural slop** section — frameworkification, rhetorical-function headings, negative runway, straw-man corrections, symmetrical exposition, section scaffolding over thin content, artificial resolution, and the master check of marginal information density per paragraph. Composition order: finding → evidence → reasoning → decision, not principle → framework → exposition → takeaway.
+- `no-ai-slop` eval: six matching structural checks.
+- CLAUDE.md + .cursorrules: **Response Style (ALWAYS APPLY)** section so the rules govern every response, not only draft-editing runs (same hoisting rationale as 3.10.1 — behavioral rules cannot live only in a lazily-loaded skill).
+- All 10 agent definitions: compact Response Style block, so subagent reports follow the same composition rules as the lead.
+
 ## [3.10.2] - 2026-08-18
 
 ### Changed
